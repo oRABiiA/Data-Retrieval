@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>HW2 Questions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Team Website</h1>
+    </header>
+    <main>
+        <ul>
+            <li>
+                <div class="question-content">
+                    <h3>שאלה 1: טכנולוגיות שונות בפרויקט</h3>
+                    <p><strong>רשמו טכנולוגיות שונות מעניינות שהשתמשתם בהם בפרויקט.</strong></p>
+                    <p>בפרויקט שלנו השתמשנו בשלוש טכנולוגיות מרכזיות אשר תרמו משמעותית לשיפור איכות ומהירות החיפוש:</p>
+                    <ol>
+                        <li><strong><em>Multithreading Search</em></strong>: טכנולוגיה זו מאפשרת ביצוע חיפושים מרובים במקביל באמצעות חלוקת המשימות בין מספר תהליכונים (<em>threads</em>). כך, מתקצר זמן העיבוד הכולל ומשתפרת היעילות של מנוע החיפוש, במיוחד עבור שאילתות מורכבות או מסדי נתונים גדולים.</li>
+                        <li><strong><em>Phrase Handling Search</em></strong>: יישמנו טכניקה שמאפשרת זיהוי והתמודדות עם ביטויים מורכבים במהלך החיפוש. הדבר מאפשר למנוע החיפוש להחזיר תוצאות מדויקות יותר כאשר המשתמשים מחפשים ביטויים מרובי מילים או מונחים מחוברים.</li>
+                        <li><strong><em>Synonyms Recognition</em></strong>: שילבנו מערכת לזיהוי מילים נרדפות (סינונימים) כדי להרחיב את טווח התוצאות הרלוונטיות. טכנולוגיה זו מסייעת למנוע החיפוש להבין כוונות משתמשים גם כאשר הם מבטאים את חיפושיהם בדרכים שונות או משתמשים במילים דומות עם משמעות דומה.</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <div class="question-content">
+                    <h3>שאלה 2: זמני ריצה של השאילתות</h3>
+                    <p><strong>כמה זמן רצו השאילתות שלכם? במה זה תלוי? האם לדעתכם ניתן לשפר זמן זה?</strong></p>
+                    <p>ברוב המקרים, זמן הרצת השאילתות עמד על טווח של כמה מילישניות עד כמה מאות מילישניות, תלוי במורכבות השאילתה, גודל מאגר הנתונים ומספר התהליכונים (<em>threads</em>) שהוקצו.</p>
+                    <p><strong>שיפור זמני החיפוש אפשרי</strong> בכמה דרכים עיקריות:</p>
+                    <ol>
+                        <li><strong>שימוש במטמון (<em>Caching</em>)</strong>: שמירת תוצאות של שאילתות נפוצות.</li>
+                        <li><strong>אופטימיזציה של אלגוריתם החיפוש</strong>: שימוש במבני נתונים מתקדמים.</li>
+                        <li><strong>ניהול <em>Multithreading</em> יעיל</strong>: ניצול מיטבי של תהליכונים.</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <div class="question-content">
+                    <h3>שאלה 3: Hubs ו-Authorities</h3>
+                    <p><strong>האם בדפים שהוחזרו קיימים <em>hubs? Authorities</em>? נמקו.</strong></p>
+                    <p>בדפים שלנו יש <em>Related Pages</em> ו-<em>Similar Pages</em>, ולכן ניתן להסיק שהם כוללים <em>Hubs</em> ו-<em>Authorities</em>:</p>
+                    <ul>
+                        <li><em>Hubs</em>: הדפים כוללים קישורים ל-<em>Related Pages</em>, אשר מפנים למקורות נוספים ורלוונטיים לנושא. בכך הם מתפקדים כמרכזים שמחברים למידע נוסף.</li>
+                        <li><em>Authorities</em>: הדפים כוללים גם <em>Similar Pages</em>, המשקפים תוכן סמכותי שאוסף הפניות מדפים אחרים ומעיד על מהימנותם בנושאים ספציפיים.</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="question-content">
+                    <h3>שאלה 4: PageRank של הדפים</h3>
+                    <img src="Picture1.png">
+                    <p><strong>5 הדפים שהזחלן החזיר וחישוב ה-<em>pagerank</em> עבורם:</strong></p>
+                    <table>
+                        <tr>
+                            <th>URL</th>
+                            <th>PageRank</th>
+                        </tr>
+                        <tr>
+                            <td>https://store.steampowered.com/</td>
+                            <td>0.359</td>
+                        </tr>
+                        <tr>
+                            <td>https://store.steampowered.com/app/2507950/Delta_Force/</td>
+                            <td>0.241</td>
+                        </tr>
+                        <tr>
+                            <td>https://store.steampowered.com/app/1149460/ICARUS/</td>
+                            <td>0.092</td>
+                        </tr>
+                        <tr>
+                            <td>https://store.steampowered.com/app/730/CounterStrike_2/</td>
+                            <td>0.215</td>
+                        </tr>
+                        <tr>
+                            <td>https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/</td>
+                            <td>0.092</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li>
+                <div class="question-content">
+                    <h3>שאלה Relevance Feedback :5</h3>
+                    <p><strong>Relevance Feedback ניתן על ידי שני סטודנטים אשר סיווגו את התוצאות הרלוונטיות של הזחלן בצורה הבאה:</strong></p>
+                    <table class="feedback-table">
+                        <tr>
+                            <th># Page</th>
+                            <th>Student 1</th>
+                            <th>Student 2</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>R</td>
+                            <td>R</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>R</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>R</td>
+                            <td>R</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>-</td>
+                            <td>R</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>R</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li>
+                <div class="red-note">
+                    הערה: באישור מנועמי התאפשר לנו לעשות את חישוב ה-<em>pagerank</em> בשיטת <em>hard coded</em> כי היה לנו בעיה לחשב את ה-<em>pagerank</em> ב-<em>steam</em> כי הזחלן לא היה מוציא את הקישורים לדפים אחרים כמו הצורך.
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Team</p>
+    </footer>
+</body>
+</html>
