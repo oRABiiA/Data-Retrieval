@@ -290,182 +290,47 @@
                     <h3>שאלה Relevance Feedback :10</h3>
                     <p><strong>Relevance Feedback ניתן על ידי שני סטודנטים אשר סיווגו את התוצאות הרלוונטיות של הזחלן בצורה הבאה:</strong></p>
                     <p><strong>עבור השאילתה: "Very Positive"</strong></p>
+                    <h3>תוצאות הזחלן וחישובי Precision & Recall</h3>
+        
+                    <h4>סיכום תוצאות הזחלן:</h4>
+                    <ul>
+                        <li>כמות הדפים שהזחלן נכנס אליהם: 132 דפים</li>
+                        <li>דפים רלוונטיים שהוחזרו: 97 מתוך 132</li>
+                        <li>מתוך המאגר, הערכנו שקיים 220 דפים רלוונטיים באמת עבור השאילתה "Very Positive" מתוך כל המאגר שקיים ב-Steam</li>
+                    </ul>
+
+                    <h4>חישוב Recall & Precision:</h4>
+                    
+                    <div class="student-calculations">
+                        <h5>סטודנט 1:</h5>
+                        <p>סטודנט ראשון סימן שיש 56 דפים רלוונטים מתוך ה-97 דפים שהזחלן החזיר.</p>
+                        <p><strong>Precision</strong> = Relevant pages selected by Student 1 / Total Pages Retrieved = 56/132 = 0.4242 (or 42.42%)</p>
+                        <p><strong>Recall</strong> = Relevant pages selected by Student 1/Total Truly Relevant Pages = 56/220 = 0.2545 (or 25.45%)</p>
+                        
+                        <h5>סטודנט 2:</h5>
+                        <p>סטודנט ראשון סימן שיש 65 דפים רלוונטים מתוך ה-97 דפים שהזחלן החזיר.</p>
+                        <p><strong>Precision</strong> = Relevant pages selected by Student 1/Total Pages Retrieved = 65/132 = 0.4924 (or 49.24%)</p>
+                        <p><strong>Recall</strong> = Relevant pages selected by Student 1/Total Truly Relevant Pages = 65/220 = 0.2955 (or 29.55%)</p>
+                    </div>
+
+                    <h4>תוצאות סופיות:</h4>
                     <table>
                         <tr>
-                            <th># Result</th>
-                            <th>Student 2</th>
-                            <th>Student 1</th>
+                            <th>% Recall in</th>
+                            <th>% Precision in</th>
+                            <th>Student</th>
                         </tr>
                         <tr>
-                            <td>1</td>
-                            <td>R</td>
-                            <td>R</td>
+                            <td>25.45%</td>
+                            <td>42.42%</td>
+                            <td>Student 1</td>
                         </tr>
                         <tr>
-                            <td>2</td>
-                            <td>-</td>
-                            <td>R</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>R</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>R</td>
-                            <td>R</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>R</td>
-                            <td>R</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>-</td>
-                            <td>R</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>R</td>
-                            <td>R</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>R</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>R</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>R</td>
-                            <td>R</td>
+                            <td>29.55%</td>
+                            <td>49.24%</td>
+                            <td>Student 2</td>
                         </tr>
                     </table>
-                    <p><strong>חישוב  Recall&Precision :</strong></p>
-                    <p>סטודנט 1:</p>
-                    <table>
-                        <tr>
-                            <th># Iteration</th>
-                            <th>Precision@k</th>
-                            <th>Recall@K</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>1.0 = 1/1</td>
-                            <td>0.1 = 1/10</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>1.0 = 2/2</td>
-                            <td>0.2 = 2/10</td>  
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>0.666 = 2/3</td>
-                            <td>0.2 = 2/10</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>0.75 = 3/4</td>
-                            <td>0.3 = 3/10</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>0.8 = 4/5</td>
-                            <td>0.4 = 4/10</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>0.833 = 5/6</td>
-                            <td>0.5 = 5/10</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>0.857 = 6/7</td>
-                            <td>0.6 = 6/10</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>0.75 = 6/8</td>
-                            <td>0.6 = 6/10</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>0.666 = 6/9</td>
-                            <td>0.6 = 6/10</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>0.7 = 7/10</td>
-                            <td>0.7 = 7/10</td>
-                        </tr>
-                    </table>
-                    <p><em>Average Precision=1/7*(1/1+2/2+3/4+4/5+5/6+6/7+7/10)=0.848</em></p>
-                    <p>סטודנט 2:</p>
-                    <table>
-                        <tr>
-                            <th># Iteration</th>
-                            <th>Precision@k</th>
-                            <th>Recall@K</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>1.0 = 1/1</td>
-                            <td>0.1 = 1/10</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>0.5 = 1/2</td>
-                            <td>0.1 = 1/10</td>  
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>0.666 = 2/3</td>
-                            <td>0.2 = 2/10</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>0.75 = 3/4</td>
-                            <td>0.3 = 3/10</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>0.8 = 4/5</td>
-                            <td>0.4 = 4/10</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>0.666 = 4/6</td>
-                            <td>0.4 = 4/10</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>0.714 = 5/7</td>
-                            <td>0.5 = 5/10</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>0.75 = 6/8</td>
-                            <td>0.6 = 6/10</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>0.777 = 7/9</td>
-                            <td>0.7 = 7/10</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>0.8 = 8/10</td>
-                            <td>0.8 = 8/10</td>
-                        </tr>
-                     </table>
-                     <p><em>Average Precision=1/8*(1/1+2/3+3/4+4/5+5/7+6/8+7/9+8/10)=0.782</em></p>
                 </div>
             </li>
         </ul>
