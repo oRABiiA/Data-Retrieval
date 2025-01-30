@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Assignments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <nav class="header-navigation">
+                <button class="about-button"><a href="./UI/About.html">About Us</a></button>
+                <button class="search-button"><a href="https://colab.research.google.com/drive/1vOlLUR0kOr68qZ23S9m_4tiW71CbKB9N#scrollTo=kDx-tk6j66uL">Search</a></button>
+            </nav>
+            <h1>Steam Search Engine</h1>
+            <h2>Optimizer Outlaws</h2>
+        </div>
+    </header>
+    <header class="HW">
+        <h2>HW Assignments</h2>
+    </header>
+    <main>
+        <ul>
+            <li>
+                <div class="question-content">
+                    <h3>שאלה 1: תחום העיסוק של האתר</h3>
+                    <p><strong>STEAM.com <a href="https://store.steampowered.com">https://store.steampowered.com</a></strong></p>
+                    <p>אתר משחקי מחשב ותוכנות שונות, המידע הזמין הוא הכל על המשחק: פירוט, קטגוריה, דרישות…
+                        האתר מציע שלל משחקים שונים ומציג את המידע בצורה יפה אבל יש כמה דברים שחסרים במנוע החיפוש של האתר כמו: חיפוש לפי כרטיס מסך מסוים, חיפוש לפי מעבד וכו...</p>
+                </div>
+            </li>
+            <li>
+                <div class="question-content">
+                    <h3>שאלה 2: שאילתות מעניינות</h3>
+                    <p><strong>השאילתות שבעיקר האתר שלנו מתמקד בהם הן:</strong></p>
+                    <ol>
+                        <li><strong><em>Hardware Search</em></strong>: המשחקים בפלטפורמה שמתעסקים בה יש להם דרישות חומרה שצריך להתקיים לפני קניה והתקנת התוכנה. רצינו לתת את האפשריות הזו למשתמש שיחפד את התוכנות לפי רכיבי חומרה (מעבד, כרטיס מסך וכו..).</li>
+                        <li><strong><em>Category Search</em></strong>: חיפוש לפי קטגוריה של משחקים. לדוגמה: משחקי מחשב מסוג MMORPG.</li>
+                        <li><strong><em>Search via Review</em></strong>: חיפוש לפי דירוג של משחקים. לדוגמה: "Very Positive"</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <div class="question-content">
+                    <h3>שאלה 3: הזחלן</h3>
+                    <p><strong>הזחלן שלנו נבנה במחברת של Google Colab</strong></p>
+                    <p>קישור לזחלן: <a href="https://colab.research.google.com/drive/1vOlLUR0kOr68qZ23S9m_4tiW71CbKB9N#scrollTo=kDx-tk6j66uL">Steam Search Crawler</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="question-content">
+                    <h3>שאלה 4: טכנולוגיות שונות בפרויקט</h3>
+                    <p><strong>רשמו טכנולוגיות שונות מעניינות שהשתמשתם בהם בפרויקט.</strong></p>
+                    <p>בפרויקט שלנו השתמשנו בשלוש טכנולוגיות מרכזיות אשר תרמו משמעותית לשיפור איכות ומהירות החיפוש:</p>
+                    <ol>
+                        <li><strong><em>Multithreading Search</em></strong>: טכנולוגיה זו מאפשרת ביצוע חיפושים מרובים במקביל באמצעות חלוקת המשימות בין מספר תהליכונים (<em>threads</em>). כך, מתקצר זמן העיבוד הכולל ומשתפרת היעילות של מנוע החיפוש, במיוחד עבור שאילתות מורכבות או מסדי נתונים גדולים.</li>
+                        <li><strong><em>Phrase Handling Search</em></strong>: יישמנו טכניקה שמאפשרת זיהוי והתמודדות עם ביטויים מורכבים במהלך החיפוש. הדבר מאפשר למנוע החיפוש להחזיר תוצאות מדויקות יותר כאשר המשתמשים מחפשים ביטויים מרובי מילים או מונחים מחוברים.</li>
+                        <li><strong><em>Synonyms Recognition</em></strong>: שילבנו מערכת לזיהוי מילים נרדפות (סינונימים) כדי להרחיב את טווח התוצאות הרלוונטיות. טכנולוגיה זו מסייעת למנוע החיפוש להבין כוונות משתמשים גם כאשר הם מבטאים את חיפושיהם בדרכים שונות או משתמשים במילים דומות עם משמעות דומה.</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <div class="question-content">
+                    <h3>שאלה 5: זמני ריצה של השאילתות</h3>
+                    <p><strong>כמה זמן רצו השאילתות שלכם? במה זה תלוי? האם לדעתכם ניתן לשפר זמן זה?</strong></p>
+                    <p>ברוב המקרים, זמן הרצת השאילתות עמד על טווח של כמה מילישניות עד כמה מאות מילישניות, תלוי במורכבות השאילתה, גודל מאגר הנתונים ומספר התהליכונים (<em>threads</em>) שהוקצו.</p>
+                    <p><strong>שיפור זמני החיפוש אפשרי</strong> בכמה דרכים עיקריות:</p>
+                    <ol>
+                        <li><strong>שימוש במטמון (<em>Caching</em>)</strong>: שמירת תוצאות של שאילתות נפוצות.</li>
+                        <li><strong>אופטימיזציה של אלגוריתם החיפוש</strong>: שימוש במבני נתונים מתקדמים.</li>
+                        <li><strong>ניהול <em>Multithreading</em> יעיל</strong>: ניצול מיטבי של תהליכונים.</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <div class="question-content">
+                    <h3>שאלה 6: Inverted Index For The Most Frequent 15 Words In The Search</h3>
+                    <h3>שאילתת חיפוש: "Very Positive"</h3>
+                    <p><strong>ה-inverted index עבור 15 המילים הנפוצות ביותר:</strong></p>
+                    <table>
+                        <tr>
+                            <th>Word</th>
+                            <th>Frequency</th>
+                        </tr>
+                        <tr>
+                            <td>review</td>
+                            <td>701</td>
+                        </tr>
+                        <tr>
+                            <td>steam</td>
+                            <td>608</td>
+                        </tr>
+                        <tr>
+                            <td>game</td>
+                            <td>453</td>
+                        </tr>
+                        <tr>
+                            <td>view</td>
+                            <td>253</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>236</td>
+                        </tr>
+                        <tr>
+                            <td>community</td>
+                            <td>223</td>
+                        </tr>
+                        <tr>
+                            <td>support</td>
+                            <td>201</td>
+                        </tr>
+                        <tr>
+                            <td>sport</td>
+                            <td>198</td>
+                        </tr>
+                        <tr>
+                            <td>add</td>
+                            <td>198</td>
+                        </tr>
+                        <tr>
+                            <td>new</td>
+                            <td>195</td>
+                        </tr>
+                        <tr>
+                            <td>strategy</td>
+                            <td>195</td>
+                        </tr>
+                        <tr>
+                            <td>language</td>
+                            <td>189</td>
+                        </tr>
+                        <tr>
+                            <td>adventure</td>
+                            <td>189</td>
+                        </tr>
+                        <tr>
+                            <td>release</td>
+                            <td>184</td>
+                        </tr>
+                        <tr>
+                            <td>home</td>
+                            <td>178</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li>
+                <div class="question-content">
+                    <h3>שאלה 7: חישוב TF-IDF עבור השאילתה "Very Positive"</h3>
+                    <p><strong>בחרנו ב-20 הדפים הראשונות שבהם הערך של TF-IDF  היה הגבוה ביותר משאר הדפים הרילוונטים שהזחלן החזיר ורק הראינו אותם בסדר ממוין:</strong></p>
+                    <table>
+                        <tr>
+                            <th>Score</th>
+                            <th>Topic</th>
+                        </tr>
+                        <tr>
+                            <td>0.006464585</td>
+                            <td>Black_Myth_Wukong_Benchmark_Tool</td>
+                        </tr>
+                        <tr>
+                            <td>0.005712751</td>
+                            <td>Farmer_Against_Potatoes_Idle</td>
+                        </tr>
+                        <tr>
+                            <td>0.005359385</td>
+                            <td>Predecessor</td>
+                        </tr>
+                        <tr>
+                            <td>0.005211633</td>
+                            <td>KILL_KNIGHT</td>
+                        </tr>
+                        <tr>
+                            <td>0.005075935</td>
+                            <td>Revolution_Idle</td>
+                        </tr>
+                        <tr>
+                            <td>0.004858508</td>
+                            <td>The_Matchless_Kungfu</td>
+                        </tr>
+                        <tr>
+                            <td>0.004740368</td>
+                            <td>Shin_chan_Shiro_and_the_Coal_Town/?snr=1_4_661__145</td>
+                        </tr>
+                        <tr>
+                            <td>0.004740368</td>
+                            <td>Shin_chan_Shiro_and_the_Coal_Town</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>0.004593759</td>
+                            <td>Frostpunk_2</td>
+                        </tr>
+                        <tr>
+                            <td>0.004556848</td>
+                            <td>Blood_Strike</td>
+                        </tr>
+                        <tr>
+                            <td>0.00440871</td>
+                            <td>Ready_or_Not</td>
+                        </tr>
+                        <tr>
+                            <td>0.004198065</td>
+                            <td>Street_Fighter_6</td>
+                        </tr>
+                        <tr>
+                            <td>0.004198065</td>
+                            <td>1364780/?snr=1_5_9__205</td>
+                        </tr>
+                        <tr>
+                            <td>0.004045606</td>
+                            <td>Age_of_Empires_II_Definitive_Edition</td>
+                        </tr>
+                        <tr>
+                            <td>0.003778513</td>
+                            <td>Star_Wars_Outlaws</td>
+                        </tr>
+                        <tr>
+                            <td>0.003778513</td>
+                            <td>2842040/?snr=1_5_9__205</td>
+                        </tr>
+                        <tr>
+                            <td>0.003650278</td>
+                            <td>God_of_War_Ragnark</td>
+                        </tr>
+                        <tr>
+                            <td>0.003188349</td>
+                            <td>Royal_Quest_Online</td>
+                        </tr>
+                        <tr>
+                            <td>0.002546463</td>
+                            <td>Age_of_Empires_II_Definitive_Edition__Lords_of_the_West</td>
+                        </tr>
+                        <tr>
+                            <td>0.001664885</td>
+                            <td>Age_of_Empires_II_Definitive_Edition__The_Mountain_Royals/?snr=1_5_9__405</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li>
+                <div class="question-content">
+                    <h3>שאלה 8: Hubs ו-Authorities</h3>
+                    <p><strong>האם בדפים שהוחזרו קיימים <em>hubs? Authorities</em>? נמקו.</strong></p>
+                    <p>בדפים שלנו יש <em>Related Pages</em> ו-<em>Similar Pages</em>, ולכן ניתן להסיק שהם כוללים <em>Hubs</em> ו-<em>Authorities</em>:</p>
+                    <ul>
+                        <li><em>Hubs</em>: הדפים כוללים קישורים ל-<em>Related Pages</em>, אשר מפנים למקורות נוספים ורלוונטיים לנושא. בכך הם מתפקדים כמרכזים שמחברים למידע נוסף.</li>
+                        <li><em>Authorities</em>: הדפים כוללים גם <em>Similar Pages</em>, המשקפים תוכן סמכותי שאוסף הפניות מדפים אחרים ומעיד על מהימנותם בנושאים ספציפיים.</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="question-content">
+                    <h3>שאלה 9: PageRank של הדפים</h3>
+                    <img src="./assets/PageRank.png">
+                    <p><strong>5 הדפים שהזחלן החזיר וחישוב ה-<em>pagerank</em> עבורם:</strong></p>
+                    <table>
+                        <tr>
+                            <th>URL</th>
+                            <th>PageRank</th>
+                        </tr>
+                        <tr>
+                            <td>https://store.steampowered.com/</td>
+                            <td>0.359</td>
+                        </tr>
+                        <tr>
+                            <td>https://store.steampowered.com/app/2507950/Delta_Force/</td>
+                            <td>0.241</td>
+                        </tr>
+                        <tr>
+                            <td>https://store.steampowered.com/app/1149460/ICARUS/</td>
+                            <td>0.092</td>
+                        </tr>
+                        <tr>
+                            <td>https://store.steampowered.com/app/730/CounterStrike_2/</td>
+                            <td>0.215</td>
+                        </tr>
+                        <tr>
+                            <td>https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/</td>
+                            <td>0.092</td>
+                        </tr>
+                    </table>
+                    <div class="red-note">
+                        הערה: באישור מנועמי התאפשר לנו לעשות את חישוב ה-<em>pagerank</em> בשיטת <em>hard coded</em> כי היה לנו בעיה לחשב את ה-<em>pagerank</em> ב-<em>steam</em> כי הזחלן לא היה מוציא את הקישורים לדפים אחרים כמו הצורך.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="question-content">
+                    <h3>שאלה Relevance Feedback :10</h3>
+                    <p><strong>Relevance Feedback ניתן על ידי שני סטודנטים אשר סיווגו את התוצאות הרלוונטיות של הזחלן בצורה הבאה:</strong></p>
+                    <p><strong>עבור השאילתה: "Very Positive"</strong></p>
+                    <h3>תוצאות הזחלן וחישובי Precision & Recall</h3>
+        
+                    <h4>סיכום תוצאות הזחלן:</h4>
+                    <ul>
+                        <li>כמות הדפים שהזחלן נכנס אליהם: 132 דפים</li>
+                        <li>דפים רלוונטיים שהוחזרו: 97 מתוך 132</li>
+                        <li>מתוך המאגר, הערכנו שקיים 220 דפים רלוונטיים באמת עבור השאילתה "Very Positive" מתוך כל המאגר שקיים ב-Steam</li>
+                    </ul>
+
+                    <h4>חישוב Recall & Precision:</h4>
+                    
+                    <div class="student-calculations">
+                        <h5>סטודנט 1:</h5>
+                        <p>סטודנט ראשון סימן שיש 56 דפים רלוונטים מתוך ה-97 דפים שהזחלן החזיר.</p>
+                        <p><strong>Precision</strong> = Relevant pages selected by Student 1 / Total Pages Retrieved = 56/132 = 0.4242 (or 42.42%)</p>
+                        <p><strong>Recall</strong> = Relevant pages selected by Student 1/Total Truly Relevant Pages = 56/220 = 0.2545 (or 25.45%)</p>
+                        
+                        <h5>סטודנט 2:</h5>
+                        <p>סטודנט ראשון סימן שיש 65 דפים רלוונטים מתוך ה-97 דפים שהזחלן החזיר.</p>
+                        <p><strong>Precision</strong> = Relevant pages selected by Student 1/Total Pages Retrieved = 65/132 = 0.4924 (or 49.24%)</p>
+                        <p><strong>Recall</strong> = Relevant pages selected by Student 1/Total Truly Relevant Pages = 65/220 = 0.2955 (or 29.55%)</p>
+                    </div>
+
+                    <h4>תוצאות סופיות:</h4>
+                    <table>
+                        <tr>
+                            <th>% Recall in</th>
+                            <th>% Precision in</th>
+                            <th>Student</th>
+                        </tr>
+                        <tr>
+                            <td>25.45%</td>
+                            <td>42.42%</td>
+                            <td>Student 1</td>
+                        </tr>
+                        <tr>
+                            <td>29.55%</td>
+                            <td>49.24%</td>
+                            <td>Student 2</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Team</p>
+    </footer>
+</body>
+</html>
